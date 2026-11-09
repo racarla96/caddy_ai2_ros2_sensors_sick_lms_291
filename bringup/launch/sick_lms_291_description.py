@@ -24,7 +24,7 @@ def get_sensor_sdf(
 
     noise_enabled=None reads the value from sensor_params.yaml.
     """
-    pkg_share = get_package_share_directory('caddy_ai2_ros2_sensors_lidar_sick_lms_291')
+    pkg_share = get_package_share_directory('caddy_ai2_ros2_sensors_sick_lms_291')
     mesh_uri  = f'file://{os.path.join(pkg_share, "meshes")}/SICK_LMS291-S05.dae'
 
     with open(os.path.join(pkg_share, 'bringup', 'config', 'sensor_params.yaml')) as f:

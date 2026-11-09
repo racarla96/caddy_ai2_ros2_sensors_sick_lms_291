@@ -57,7 +57,7 @@ def _launch(context, *args, **kwargs):
     pitch       = float(lc['pitch'])
     yaw         = float(lc['yaw'])
 
-    pkg_share    = get_package_share_directory('caddy_ai2_ros2_sensors_lidar_sick_lms_291')
+    pkg_share    = get_package_share_directory('caddy_ai2_ros2_sensors_sick_lms_291')
     gz_sim_share = get_package_share_directory('ros_gz_sim')
     mesh_uri     = f'file://{os.path.join(pkg_share, "meshes")}/SICK_LMS291-S05.dae'
 
@@ -143,7 +143,7 @@ def _launch(context, *args, **kwargs):
 
         nodes += [
             Node(
-                package='caddy_ai2_ros2_sensors_lidar_sick_lms_291',
+                package='caddy_ai2_ros2_sensors_sick_lms_291',
                 executable='sick_node',
                 name='sick_lms_291_node',
                 output='screen',
